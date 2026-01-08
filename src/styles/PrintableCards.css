@@ -1,0 +1,397 @@
+.id-cards-view,
+.reports-view,
+.certificates-view {
+  padding: 2rem;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.id-cards-header,
+.reports-header,
+.certificates-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.id-cards-header h1,
+.reports-header h1,
+.certificates-header h1 {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.id-cards-actions,
+.reports-actions,
+.cert-controls,
+.cert-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-group input {
+  cursor: pointer;
+}
+
+.select-input {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 1rem;
+}
+
+.students-list,
+.members-list {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.student-checkbox,
+.member-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.student-checkbox:hover,
+.member-checkbox:hover {
+  background-color: var(--accent);
+}
+
+.student-checkbox input,
+.member-checkbox input {
+  cursor: pointer;
+}
+
+.print-preview {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+
+.print-preview h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cards-container,
+.reports-container,
+.certificates-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ID Card Styling */
+.id-card {
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid var(--primary);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background: white;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+.card-photo {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.card-content {
+  text-align: left;
+  margin: 1.5rem 0;
+}
+
+.card-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-field .label {
+  font-weight: bold;
+  color: var(--primary);
+  flex: 0 0 35%;
+}
+
+.card-field .value {
+  flex: 0 0 65%;
+  text-align: right;
+}
+
+.card-footer {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 0.5rem;
+}
+
+.member-card {
+  background: linear-gradient(135deg, #f5f5f5 0%, white 100%);
+}
+
+/* Grade Report Styling */
+.grade-report {
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  background: white;
+  color: black;
+  margin: 0 auto 2rem;
+}
+
+.report-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 1rem;
+}
+
+.report-header h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.school-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.student-info {
+  margin-bottom: 2rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-row .label {
+  font-weight: bold;
+  width: 40%;
+}
+
+.info-row .value {
+  width: 60%;
+  text-align: right;
+}
+
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.grades-table th,
+.grades-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.grades-table th {
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+}
+
+.grade-cell {
+  font-weight: bold;
+  text-align: center;
+}
+
+.total-row {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.report-footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Certificate Styling */
+.certificate {
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  margin: 0 auto 2rem;
+  background: white;
+  color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--primary);
+  page-break-after: always;
+  page-break-inside: avoid;
+}
+
+.cert-border {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 2px solid var(--primary);
+  opacity: 0.3;
+}
+
+.cert-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 90%;
+}
+
+.cert-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cert-text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.cert-text p {
+  margin: 0.5rem 0;
+}
+
+.student-name-cert {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 1rem 0;
+}
+
+.cert-details {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.signature-line {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.sig-block {
+  width: 200px;
+}
+
+.sig-line {
+  border-top: 2px solid black;
+  height: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.sig-name {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .id-cards-view,
+  .reports-view,
+  .certificates-view {
+    padding: 0;
+  }
+
+  .id-cards-header,
+  .reports-header,
+  .certificates-header,
+  .students-list,
+  .members-list,
+  .print-preview h2 {
+    display: none;
+  }
+
+  .print-preview {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+  }
+
+  .cards-container,
+  .reports-container,
+  .certificates-container {
+    gap: 0;
+  }
+
+  .id-card,
+  .grade-report,
+  .certificate {
+    page-break-inside: avoid;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  .certificate {
+    page-break-after: always;
+  }
+}
