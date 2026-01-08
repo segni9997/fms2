@@ -67,18 +67,18 @@ export default function LoginPage() {
             <li>
               <strong>Admin:</strong> admin / admin123
             </li>
-            <li>
+            {/* <li>
               <strong>Finance:</strong> finance / finance123
             </li>
             <li>
               <strong>HR:</strong> hr / hr123
-            </li>
+            </li> */}
             <li>
               <strong>School:</strong> school / school123
             </li>
-            <li>
+            {/* <li>
               <strong>Data Entry:</strong> data / data123
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
